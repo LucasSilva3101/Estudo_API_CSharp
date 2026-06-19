@@ -18,5 +18,10 @@ namespace MinhaAPI.Controllers {
             })
             .ToArray();
         }
-    }
+
+        [HttpGet("Teste")]
+        public string GetSaudacoes() {
+            return $"{DateTime.Now.ToShortDateString()} - Bem-Vindo a Minha API!";
+        }
+}
 }
